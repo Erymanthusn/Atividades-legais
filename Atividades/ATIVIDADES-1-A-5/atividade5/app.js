@@ -14,7 +14,7 @@ const entradaDados = readline.createInterface({
                           entradaDados.question('Informe qual será o contador final (1 a 500): ', function(contfinal){
                              let contadorFim = contfinal
 
-                             entradaDados.question('Deseja ver a lista de numeros pares ou impares? (1 = PARES / 2 = IMPARES): ', function(escolha){
+                             entradaDados.question('Deseja ver a lista de numeros pares ou impares? (1 = PARES / 2 = IMPARES / 3 = AMBOS): ', function(escolha){
                                 let escolhaParOuImpar = escolha
 
                          let validar = calculo.validacao(contadorInic, contadorFim, escolhaParOuImpar)
@@ -24,3 +24,4 @@ const entradaDados = readline.createInterface({
                 })
             })
         })
+
