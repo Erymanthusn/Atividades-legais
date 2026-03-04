@@ -12,7 +12,7 @@ function validacao (n3, n4, escolha){
     } else if (valor3 >= valor4){
         console.log ('ERRO: com os dados recebidos não sera possivel realizar a contagem')
         process.exit(0)
-    } else if (valor3 < 0 || valor3 > 500 || valor4 <1 || valor4 >500 || opcao <=0 || opcao >=3){
+    } else if (valor3 < 0 || valor3 > 500 || valor4 <1 || valor4 >500 || opcao <=0 || opcao >=4){
         console.log ('ERRO: com os dados recebidos não sera possivel realizar a contagem')
         process.exit(0)
     }
@@ -72,3 +72,4 @@ module.exports = {
     calcularTabuada,
     validacao
 }
+
