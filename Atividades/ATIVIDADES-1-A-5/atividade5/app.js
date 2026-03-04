@@ -13,8 +13,14 @@ const entradaDados = readline.createInterface({
                         let contadorInic = contInicial
                           entradaDados.question('Informe qual será o contador final (1 a 500): ', function(contfinal){
                              let contadorFim = contfinal
-                         let validar = calculo.validacao(contadorInic, contadorFim)
-                        let resultado = calculo.calcularTabuada(contadorInic, contadorFim)
-                    
+
+                             entradaDados.question('Deseja ver a lista de numeros pares ou impares? (1 = PARES / 2 = IMPARES): ', function(escolha){
+                                let escolhaParOuImpar = escolha
+
+                         let validar = calculo.validacao(contadorInic, contadorFim, escolhaParOuImpar)
+                        let resultado = calculo.calcularTabuada(contadorInic, contadorFim, escolhaParOuImpar)
+
+
+                })
             })
         })
